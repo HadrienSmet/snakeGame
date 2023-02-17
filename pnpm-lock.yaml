@@ -1,8 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@types/react': ^18.0.27
-  '@types/react-dom': ^18.0.10
+  '@types/react': ^18.0.28
+  '@types/react-dom': ^18.0.11
   '@typescript-eslint/eslint-plugin': ^5.52.0
   '@typescript-eslint/parser': ^5.52.0
   '@vitejs/plugin-react': ^3.1.0
@@ -10,25 +10,25 @@ specifiers:
   eslint-plugin-react: ^7.32.2
   react: ^18.2.0
   react-dom: ^18.2.0
-  sass: ^1.58.1
-  typescript: ^4.9.3
-  vite: ^4.1.0
+  sass: ^1.58.2
+  typescript: ^4.9.5
+  vite: ^4.1.2
 
 dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  sass: 1.58.1
+  sass: 1.58.2
 
 devDependencies:
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
   '@typescript-eslint/eslint-plugin': 5.52.0_6cfvjsbua5ptj65675bqcn6oza
   '@typescript-eslint/parser': 5.52.0_7kw3g6rralp5ps6mg3uyzz6azm
-  '@vitejs/plugin-react': 3.1.0_vite@4.1.1
+  '@vitejs/plugin-react': 3.1.0_vite@4.1.2
   eslint: 8.34.0
   eslint-plugin-react: 7.32.2_eslint@8.34.0
   typescript: 4.9.5
-  vite: 4.1.1_sass@1.58.1
+  vite: 4.1.2_sass@1.58.2
 
 packages:
 
@@ -713,7 +713,7 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vitejs/plugin-react/3.1.0_vite@4.1.1:
+  /@vitejs/plugin-react/3.1.0_vite@4.1.2:
     resolution: {integrity: sha512-AfgcRL8ZBhAlc3BFdigClmTUMISmmzHn7sB2h9U1odvc5U/MjWXsAaz18b/WoppUTDBzxOJwo2VdClfUcItu9g==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -724,7 +724,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.19.6_@babel+core@7.20.12
       magic-string: 0.27.0
       react-refresh: 0.14.0
-      vite: 4.1.1_sass@1.58.1
+      vite: 4.1.2_sass@1.58.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -849,8 +849,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001452
-      electron-to-chromium: 1.4.296
+      caniuse-lite: 1.0.30001456
+      electron-to-chromium: 1.4.301
       node-releases: 2.0.10
       update-browserslist-db: 1.0.10_browserslist@4.21.5
     dev: true
@@ -867,8 +867,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /caniuse-lite/1.0.30001452:
-    resolution: {integrity: sha512-Lkp0vFjMkBB3GTpLR8zk4NwW5EdRdnitwYJHDOOKIU85x4ckYCPQ+9WlVvSVClHxVReefkUMtWZH2l9KGlD51w==}
+  /caniuse-lite/1.0.30001456:
+    resolution: {integrity: sha512-XFHJY5dUgmpMV25UqaD4kVq2LsiaU5rS8fb0f17pCoXQiQslzmFgnfOxfvo1bTpTqf7dwG/N/05CnLCnOEKmzA==}
     dev: true
 
   /chalk/2.4.2:
@@ -989,8 +989,8 @@ packages:
       esutils: 2.0.3
     dev: true
 
-  /electron-to-chromium/1.4.296:
-    resolution: {integrity: sha512-i/6Q+Y9bluDa2a0NbMvdtG5TuS/1Fr3TKK8L+7UUL9QjRS5iFJzCC3r70xjyOnLiYG8qGV4/mMpe6HuAbdJW4w==}
+  /electron-to-chromium/1.4.301:
+    resolution: {integrity: sha512-bz00ASIIDjcgszZKuEA1JEFhbDjqUNbQ/PEhNEl1wbixzYpeTp2H2QWjsQvAL2T1wJBdOwCF5hE896BoMwYKrA==}
     dev: true
 
   /es-abstract/1.21.1:
@@ -1180,7 +1180,7 @@ packages:
       eslint-utils: 3.0.0_eslint@8.34.0
       eslint-visitor-keys: 3.3.0
       espree: 9.4.1
-      esquery: 1.4.0
+      esquery: 1.4.2
       esutils: 2.0.3
       fast-deep-equal: 3.1.3
       file-entry-cache: 6.0.1
@@ -1218,8 +1218,8 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /esquery/1.4.0:
-    resolution: {integrity: sha512-cCDispWt5vHHtwMY2YrAQ4ibFkAL8RbH5YGBnZBc90MolvvfkkQcJro/aZiAQUlQ3qgrYS6D6v8Gc5G5CQsc9w==}
+  /esquery/1.4.2:
+    resolution: {integrity: sha512-JVSoLdTlTDkmjFmab7H/9SL9qGSyjElT3myyKp7krqjVFQCDLmj1QFaCLRFBszBKI0XVZaiiXvuPIX3ZwHe1Ng==}
     engines: {node: '>=0.10'}
     dependencies:
       estraverse: 5.3.0
@@ -2036,8 +2036,8 @@ packages:
       is-regex: 1.1.4
     dev: true
 
-  /sass/1.58.1:
-    resolution: {integrity: sha512-bnINi6nPXbP1XNRaranMFEBZWUfdW/AF16Ql5+ypRxfTvCRTTKrLsMIakyDcayUt2t/RZotmL4kgJwNH5xO+bg==}
+  /sass/1.58.2:
+    resolution: {integrity: sha512-2mbyOWOv/lhEXD6nVrQZQ4KT2DlwcODbTskM42EyqBAFUWOhiiYtAXZqjZz1ygzapYf+N+2GwfIH9M5FM4GUMg==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
@@ -2234,8 +2234,8 @@ packages:
       punycode: 2.3.0
     dev: true
 
-  /vite/4.1.1_sass@1.58.1:
-    resolution: {integrity: sha512-LM9WWea8vsxhr782r9ntg+bhSFS06FJgCvvB0+8hf8UWtvaiDagKYWXndjfX6kGl74keHJUcpzrQliDXZlF5yg==}
+  /vite/4.1.2_sass@1.58.2:
+    resolution: {integrity: sha512-MWDb9Rfy3DI8omDQySbMK93nQqStwbsQWejXRY2EBzEWKmLAXWb1mkI9Yw2IJrc+oCvPCI1Os5xSSIBYY6DEAw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -2263,7 +2263,7 @@ packages:
       postcss: 8.4.21
       resolve: 1.22.1
       rollup: 3.15.0
-      sass: 1.58.1
+      sass: 1.58.2
     optionalDependencies:
       fsevents: 2.3.2
     dev: true

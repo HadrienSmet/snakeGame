@@ -1,0 +1,15 @@
+.right-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    button {
+        background-color: transparent;
+        border: 1px solid black;
+        width: 50%;
+        height: 50px;
+        font-size: 2em;
+        font-family: "main-fonts";
+    }
+}

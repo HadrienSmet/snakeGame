@@ -186,15 +186,17 @@ const GameSide = () => {
     const { scoreRef, canvasRef } = useSnakeGame();
     return (
         <div className="game-side">
-            <h1>
-                Score :{" "}
-                <span ref={scoreRef} className="score">
-                    {score}
-                </span>
-            </h1>
-            <h2>
-                Meilleur score :<span>{bestScore ? bestScore : "0"}</span>
-            </h2>
+            <div className="score-row">
+                <h1>
+                    Score :{" "}
+                    <span ref={scoreRef} className="score">
+                        {score}
+                    </span>
+                </h1>
+                <h2>
+                    Meilleur score :<span>{bestScore ? bestScore : "0"}</span>
+                </h2>
+            </div>
             <canvas
                 ref={canvasRef}
                 id="canvas"
