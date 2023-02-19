@@ -63,18 +63,6 @@ const useSnakeGame = () => {
         return false;
     };
 
-    const emptySpaceForFood = (
-        food: ElementPosition,
-        head: ElementPosition,
-        snake: ElementPosition[]
-    ) => {
-        for (let i = 0; i < snake.length; i++) {
-            if (food.x === snake[i].x && food.y === snake[i].y) return true;
-            if (food.x === head.x && food.y === head.y) return true;
-        }
-        return false;
-    };
-
     const unitHandler = () => {
         let snakeX = snake[0].x;
         let snakeY = snake[0].y;
@@ -92,19 +80,36 @@ const useSnakeGame = () => {
         return newHead;
     };
 
+    const foodPosHandler = () => {
+        const potentialPos = {
+            x: Math.floor(Math.random() * 15) * unit,
+            y: Math.floor(Math.random() * 15) * unit,
+        };
+
+        return potentialPos;
+    };
+
+    const foodGenerator = () => {
+        let potentialPos: ElementPosition | null = null;
+        let isOnSnake = true;
+
+        while (isOnSnake) {
+            potentialPos = foodPosHandler();
+            isOnSnake = snake.some(
+                (segment) =>
+                    segment.x === potentialPos?.x &&
+                    segment.y === potentialPos?.y
+            );
+        }
+
+        return potentialPos;
+    };
+
     const gameHandler = (newHead: ElementPosition) => {
         if (newHead.x === food.x && newHead.y === food.y) {
             score++;
-            const potentialPos = {
-                x: Math.floor(Math.random() * 15) * unit,
-                y: Math.floor(Math.random() * 15) * unit,
-            };
-            if (emptySpaceForFood(potentialPos, newHead, snake) === false) {
-                setFood({
-                    x: potentialPos.x,
-                    y: potentialPos.y,
-                });
-            }
+            const foodPos: ElementPosition | null = foodGenerator();
+            if (foodPos) setFood(foodPos);
         } else {
             snake.pop();
         }
