@@ -1,7 +1,8 @@
 .game-side {
     .score-row {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column-reverse;
         width: 100%;
+        color: rgba(29, 32, 4, 0.8);
     }
 }

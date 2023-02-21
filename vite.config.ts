@@ -6,5 +6,10 @@ export default defineConfig({
     plugins: [react()],
     build: {
         assetsDir: "assets",
+        rollupOptions: {
+            output: {
+                assetFileNames: "fonts/[name].[hash][extname]",
+            },
+        },
     },
 });
