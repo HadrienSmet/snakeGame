@@ -7,7 +7,7 @@ type ElementPosition = {
     y: number;
 };
 
-const bestScore = localStorage.getItem("best score");
+const bestScore = localStorage.getItem("Snake best score");
 const unit = 40;
 const background = new Image();
 const foodEl = new Image();
@@ -109,6 +109,8 @@ const useSnakeGame = () => {
         if (newHead.x === food.x && newHead.y === food.y) {
             score++;
             const foodPos: ElementPosition | null = foodGenerator();
+            console.log(foodPos);
+
             if (foodPos) setFood(foodPos);
         } else {
             snake.pop();
@@ -128,10 +130,10 @@ const useSnakeGame = () => {
         ) {
             if (bestScore !== null) {
                 if (parseInt(bestScore) < score) {
-                    localStorage.setItem("best score", `${score}`);
+                    localStorage.setItem("Snake best score", `${score}`);
                 }
             } else {
-                localStorage.setItem("best score", `${score}`);
+                localStorage.setItem("Snake best score", `${score}`);
             }
             snake = [];
             snake[0] = {
